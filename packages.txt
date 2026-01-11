@@ -1,0 +1,14 @@
+setuptools
+langchain
+langchain-community
+langchain-huggingface
+langgraph
+faiss-cpu
+pydantic
+python-dotenv
+beautifulsoup4
+requests
+streamlit
+wikipedia
+
+-e .
