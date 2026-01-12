@@ -4,11 +4,11 @@ from src.logger.logging import logging
 from src.exception.exception import RAGException
 
 from typing import List, Union
-from langchain_community.document_loaders import WebBaseLoader,TextLoader,PyPDFDirectoryLoader
+from langchain_community.document_loaders import WebBaseLoader,TextLoader,PyPDFDirectoryLoader,PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 from pathlib import Path
-
+from src.config.config import Config
 class DocumentProcessor:
     try:
         def __init__(self, chunk_size: int = 500, chunk_overlap: int = 50):
@@ -58,7 +58,7 @@ class DocumentProcessor:
         try:
             logging.info("def -> load_pdf, load Pdf ")
             """Load document's from a PDF file"""
-            loader = PyPDFDirectoryLoader(str("data"))
+            loader = PyPDFLoader(str("data"))
             return loader.load()
         except Exception as e:
             raise RAGException(e,sys)
@@ -109,7 +109,7 @@ class DocumentProcessor:
         except Exception as e:
             raise RAGException(e,sys)
     
-    def process_docss(self, urls: List[str]) -> List[Document]:
+    def process_docs(self, urls: List[str]) -> List[Document]:
         try:
             """
             Complete pipeline to load and split documents

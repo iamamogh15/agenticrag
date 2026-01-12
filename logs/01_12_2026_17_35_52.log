@@ -1,0 +1,16 @@
+[2026-01-12 17:35:52,943] 16 root - INFO Set the key from .env
+[2026-01-12 17:35:57,024] 11 langchain_community.utils.user_agent - WARNING USER_AGENT environment variable not set, consider setting it to identify your requests.
+[2026-01-12 17:35:57,130] 11 root - INFO Initialize RAG State by Pydantic BaseModel
+[2026-01-12 17:35:57,154] 24 root - INFO Initialize RAG nodes for Re+Act
+[2026-01-12 17:35:57,603] 21 root - INFO Initialize Document Ingestion for RAG 
+[2026-01-12 17:35:57,603] 17 root - INFO Initialize vector store
+[2026-01-12 17:35:57,606] 219 sentence_transformers.SentenceTransformer - INFO Use pytorch device_name: cpu
+[2026-01-12 17:35:57,607] 227 sentence_transformers.SentenceTransformer - INFO Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+[2026-01-12 17:36:01,930] 121 root - INFO def -> process_urls, load and process docs 
+[2026-01-12 17:36:01,930] 77 root - INFO def -> LoadDocuments, Loading documents from text, pdf, and urls 
+[2026-01-12 17:36:01,930] 32 root - INFO def -> load_url, loading urls
+[2026-01-12 17:36:02,150] 41 root - INFO def -> load_pdfdirectory, load whole pdf directory
+[2026-01-12 17:36:21,596] 32 root - INFO def -> load_url, loading urls
+[2026-01-12 17:36:22,191] 41 root - INFO def -> load_pdfdirectory, load whole pdf directory
+[2026-01-12 17:36:42,584] 107 root - INFO def -> split_documents, split into chunks
+[2026-01-12 17:36:42,964] 31 root - INFO def -> create_vectorstore, Creating vectore Store

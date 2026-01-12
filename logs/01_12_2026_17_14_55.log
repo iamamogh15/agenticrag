@@ -1,0 +1,4 @@
+[2026-01-12 17:14:55,354] 16 root - INFO Set the key from .env
+[2026-01-12 17:14:59,076] 11 langchain_community.utils.user_agent - WARNING USER_AGENT environment variable not set, consider setting it to identify your requests.
+[2026-01-12 17:14:59,239] 11 root - INFO Initialize RAG State by Pydantic BaseModel
+[2026-01-12 17:14:59,260] 24 root - INFO Initialize RAG nodes for Re+Act

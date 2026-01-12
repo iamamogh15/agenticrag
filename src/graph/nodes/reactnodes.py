@@ -10,7 +10,7 @@ from src.exception.exception import RAGException
 from langchain_core.documents import Document
 from langchain_core.tools import Tool
 from langchain_core.messages import HumanMessage
-from langchain.agents import create_react_agent
+from langgraph.prebuilt import create_react_agent
 
 #Wikipedia Tools
 from langchain_community.utilities import WikipediaAPIWrapper

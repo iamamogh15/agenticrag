@@ -10,5 +10,8 @@ beautifulsoup4
 requests
 streamlit
 wikipedia
+sentence-transformers
+langchain-groq
+pypdf
 
 -e .

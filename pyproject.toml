@@ -5,5 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "langchain-groq>=1.1.1",
+    "pypdf>=6.6.0",
+    "sentence-transformers>=5.2.0",
     "setuptools>=80.9.0",
 ]

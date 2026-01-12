@@ -1,0 +1,13 @@
+[2026-01-12 17:22:58,000] 16 root - INFO Set the key from .env
+[2026-01-12 17:23:01,688] 11 langchain_community.utils.user_agent - WARNING USER_AGENT environment variable not set, consider setting it to identify your requests.
+[2026-01-12 17:23:01,805] 11 root - INFO Initialize RAG State by Pydantic BaseModel
+[2026-01-12 17:23:01,838] 24 root - INFO Initialize RAG nodes for Re+Act
+[2026-01-12 17:23:03,282] 21 root - INFO Initialize Document Ingestion for RAG 
+[2026-01-12 17:23:03,282] 17 root - INFO Initialize vector store
+[2026-01-12 17:23:03,284] 219 sentence_transformers.SentenceTransformer - INFO Use pytorch device_name: cpu
+[2026-01-12 17:23:03,284] 227 sentence_transformers.SentenceTransformer - INFO Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+[2026-01-12 17:23:09,676] 1729 huggingface_hub.file_download - WARNING Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+[2026-01-12 17:23:42,428] 121 root - INFO def -> process_urls, load and process docs 
+[2026-01-12 17:23:42,428] 77 root - INFO def -> LoadDocuments, Loading documents from text, pdf, and urls 
+[2026-01-12 17:23:42,428] 32 root - INFO def -> load_url, loading urls
+[2026-01-12 17:23:42,623] 41 root - INFO def -> load_pdfdirectory, load whole pdf directory
